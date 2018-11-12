@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.atlbr.baseballtickets.MainActivity">
+
+    <ImageView
+        android:id="@+id/bravesLogo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/imgDescription"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bravesLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:fontFamily="casual"
+        android:text="@string/welcomeMessage"
+        android:textAlignment="center"
+        android:textColor="@color/scarlet"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/gameSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/welcomeMessage"
+        android:layout_marginTop="14dp" />
+
+    <Spinner
+        android:id="@+id/ticketType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gameSelection"
+        android:layout_marginTop="21dp" />
+
+    <Spinner
+        android:id="@+id/numTickets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ticketType"
+        android:layout_marginTop="24dp" />
+
+    <CheckBox
+        android:id="@+id/receiveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/welcomeMessage"
+        android:layout_below="@+id/numTickets"
+        android:layout_marginTop="12dp"
+        android:text="@string/sendSms" />
+
+    <Button
+        android:id="@+id/displayReceipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/receiveText"
+        android:layout_below="@+id/receiveText"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="@color/navy"
+        android:text="@string/displayReceipt"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <Button
+        android:id="@+id/showLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/displayReceipt"
+        android:layout_alignBottom="@+id/displayReceipt"
+        android:layout_toEndOf="@+id/receiveText"
+        android:backgroundTint="@color/scarlet"
+        android:text="@string/stadiumLocation"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/receiveText"
+        android:layout_alignBottom="@+id/receiveText"
+        android:layout_toEndOf="@+id/receiveText"
+        android:layout_toStartOf="@+id/sendSMS"
+        android:ems="10"
+        android:hint="@string/phoneNumber"
+        android:inputType="phone"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/sendSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/phoneNumber"
+        android:text="@string/sendSMS"
+        android:textAlignment="center"
+        android:visibility="invisible" />
+</RelativeLayout>

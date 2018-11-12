@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Baseball Tickets</string>
+    <string name="welcomeMessage">It\'s Time for Braves Baseball!</string>
+    <string name="imgDescription">Braves Logo</string>
+    <string name="gamePrompt">Select the Game You Wish to Attend</string>
+    <string name="ticketPrompt">Select the Type of Ticket You Would Like</string>
+    <string name="numTicketsPrompt">Select the Number of Tickets</string>
+
+    <string-array name="gameSelectionArray">
+        <item> (Select the Game You Wish to Attend)</item>
+        1<item> AT Chicago Cubs - Sat April 14 - 2:20 PM </item>
+       2 <item> AT Chicago Cubs - Sun April 15 - 2:20 PM </item>
+        3<item> VS Philadelphia Phillies - Mon April 16 - 7:35 PM </item>
+        4<item> VS Philadelphia Phillies - Tue April 17 - 7:35 PM </item>
+        5<item> VS Philadelphia Phillies - Wed April 18 - 7:35 PM </item>
+        6<item> AT Cincinnati Reds - Mon April 23 - 6:40 PM </item>
+        7<item> AT Cincinnati Reds - Tue April 24 - 6:40 PM </item>
+        8<item> AT Philadelphia Phillies - Fri April 27 - 7:05 PM </item>
+       9 <item> AT Tampa Bay Rays - Tue May 8 - 7:10 PM </item>
+        10<item> AT Tampa Bay Rays - Wed May 9 - 7:10 PM </item>
+    </string-array>
+
+    <string-array name="ticketTypeArray">
+        <item> (Select the Type of Ticket You Would Like) </item>
+        <item> Bleacher ($35)</item>
+        <item> Upper Level ($50) </item>
+        <item> Field Box ($72) </item>
+        <item> Club Box ($95) </item>
+    </string-array>
+
+    <string-array name="numTicketsArray">
+        <item> (Select the Number of Tickets to Purchase) </item>
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+    </string-array>
+    <string name="title_activity_stadium_location">Map</string>
+    <string name="sendSms">Send SMS Receipt</string>
+    <string name="displayReceipt">Display Receipt</string>
+    <string name="stadiumLocation">Stadium Location</string>
+    <string name="receiptOutput">(Receipt Goes Here)</string>
+    <string name="phoneNumber">Enter Phone #</string>
+    <string name="sendSMS">Send SMS</string>
+</resources>
